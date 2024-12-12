@@ -2,8 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Resources\TransactionResource\Widgets\TransactionChart;
-use App\Filament\Widgets\StatsOverview;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -30,8 +28,9 @@ class AdminPanelProvider extends PanelProvider
       ->path('admin')
       ->login()
       ->colors([
-        'primary' => Color::Pink,
+        'primary' => Color::Red,
       ])
+      ->brandLogo(fn() => view('filament.admin.logo'))
       ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
       ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
       ->pages([

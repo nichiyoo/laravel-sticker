@@ -1,12 +1,4 @@
-# EditorConfig is awesome: https://EditorConfig.org
+Microsoft Windows [Version 10.0.22631.4460]
+(c) Microsoft Corporation. All rights reserved.
 
-# top-most EditorConfig file
-root = true
-
-[*]
-indent_style = space
-indent_size = 2
-end_of_line = crlf
-charset = utf-8
-trim_trailing_whitespace = false
-insert_final_newline = false
+C:\Users\hiday\Herd\laravel-sticker>
